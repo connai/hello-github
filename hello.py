@@ -1,5 +1,5 @@
 def say_hello(name):
-    return f"你好，{name}！欢迎来到 GitHub。"
+    return f"Hello, {name}! Welcome to GitHub."
 
 
 def add(a, b):
