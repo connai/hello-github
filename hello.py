@@ -7,6 +7,12 @@ def add(a, b):
     return a + b
 
 
+def multiply(a, b):
+    """返回两数之积"""
+    return a * b
+
+
 if __name__ == "__main__":
     print(say_hello("wuxiuxiao"))
     print(f"1 + 2 = {add(1, 2)}")
+    print(f"3 x 4 = {multiply(3, 4)}")
