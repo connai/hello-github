@@ -1,0 +1,25 @@
+name: 自动检查
+
+# 触发条件：每当推代码到 main 或提 PR 时
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# job：要做的事情
+jobs:
+  test:
+    runs-on: ubuntu-latest  # 用 GitHub 免费提供的 Linux 虚拟机
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 运行 hello.py
+        run: python hello.py
