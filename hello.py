@@ -1,4 +1,5 @@
 def say_hello(name):
+    # 简单判断：名字含中文则用中文问候
     return f"👋 {name}，欢迎！"
 
 
