@@ -31,4 +31,3 @@ if __name__ == "__main__":
     print(f"5 - 3 = {subtract(5, 3)}")
     print(f"3 x 4 = {multiply(3, 4)}")
     print(f"10 / 2 = {divide(10, 2)}")
-这行不是合法 Python 代码
